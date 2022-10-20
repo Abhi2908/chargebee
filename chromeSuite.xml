@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SubscriptionWebUI">
+	<parameter name="browser" value="chrome" />
+	<!--  <listeners>
+		<listener class-name="utils.CustomReport" />
+	</listeners> -->
+	<test name="Web Automation Regression">
+		<classes>
+			<class name="bid.web.WebTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>web Test Results</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName>Automation Report</reportName>
+        
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>top</testViewChartLocation>
+        
+        <!-- headline to tell the environment -->
+        <reportHeadline>Cloud environment</reportHeadline>
+        
+        <!-- Provide the date of execution -->
+        <dateformat>mm-dd-yyyy</dateformat>
+        
+        <!-- Provide the date of execution -->
+        <timeformat>HH:mm:ss</timeformat>
+        
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    $("body").addClass("standard");
+                    $('#enableDashboard').trigger("click");
+                });
+            ]]>
+        </scripts>
+        
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+                .report-name { padding-left: 10px; padding-left: 80px; padding-right: 20px; } .report-name > img { float: left;height: 90%;margin-left: 30px;margin-top: 2px;width: auto; }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
